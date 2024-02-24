@@ -22,11 +22,11 @@
         <div class="navbar-nav ms-auto">
           <span class="nav-link active">{{g.user.username}}</span>
         </div>
-        <div class="navbar-nav">
-          <a class="nav-link ms-2 p-2" href="{{url_for('todo.index')}}">Tareas</a>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="{{url_for('todo.index')}}">Tareas</a>
         </div>
         <div class="navbar-nav">
-          <a class="nav-link ms-2 p-2" href="#">Cerrar Sesión</a>
+          <a class="nav-link ms-2 p-2" href="{{url_for('auth.login')}}">Cerrar Sesión</a>
         </div>
         {% else %}
         <div class="navbar-nav ms-auto">

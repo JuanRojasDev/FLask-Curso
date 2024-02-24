@@ -49,6 +49,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user.id
+            print("Sesión del usuario establecida correctamente. ID de usuario:", user.id)
             return redirect(url_for('todo.index'))
 
         flash(error)
